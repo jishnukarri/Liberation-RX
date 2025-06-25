@@ -17,7 +17,7 @@ on:
     # Sequence of patterns matched against refs/tags
     tags:
       - v2*
-
+    workflow_dispatch:
 # Need permission to write to the Releases tab now.
 permissions:
   contents: write
