@@ -6,3 +6,5 @@ maps/Liberation_RX.Eusa/*
 maps/Liberation_RX.Utes/*
 /.vs
 /.gitignore
+
+*.pbo
