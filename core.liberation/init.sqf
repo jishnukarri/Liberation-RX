@@ -56,6 +56,7 @@ if (!abort_loading) then {
 
 	if (isServer) then {
 		[] spawn compileFinal preprocessFileLineNumbers "scripts\server\init_server.sqf";
+		[] spawn compileFinal preprocessFileLineNumbers "SA_AdvancedTowing\functions\fn_advancedTowingInit.sqf";
 	};
 
 	if (!isDedicated && !hasInterface && isMultiplayer) then {
