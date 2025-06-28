@@ -54,7 +54,7 @@ R3F_LOG_CFG_lock_objects_mode = "none";
  * Set to -1 to deny the unlock of objects.
  * See also the config variable R3F_LOG_CFG_lock_objects_mode.
  */
-R3F_LOG_CFG_unlock_objects_timer = 120;
+R3F_LOG_CFG_unlock_objects_timer = 0;
 
 /**
  * ALLOW NO GRAVITY OVER GROUND
