@@ -5,7 +5,7 @@ GRLIB_west_modder = "pSiKO";
 // Default classname: scripts\shared\default_classnames.sqf
 // Advanced definition: scripts\shared\classnames.sqf
 
-//huron_typename = "RHS_CH_47F";  // // to use value from lobby/server.cfg
+huron_typename = "RHS_CH_47F";  // // to use value from lobby/server.cfg
 FOB_typename = "Land_Cargo_HQ_V1_F";
 FOB_box_typename = "B_Slingload_01_Cargo_F";
 FOB_truck_typename = "B_Truck_01_box_F";
@@ -25,13 +25,13 @@ blufor_flag = "Flag_NATO_F";
 // [CLASSNAME, MANPOWER, AMMO, FUEL, RANK]
 infantry_units_west = [
 	["Alsatian_Random_F",0,0,0,GRLIB_perm_max],
-	["Fin_random_F",0,0,0,0],
-	["rhsusf_army_ucp_rifleman",1,0,0,0],
-	["rhsusf_army_ucp_medic",1,0,0,0],
-	["rhsusf_army_ucp_engineer",1,0,0,0],
+	["Fin_random_F",0,0,0,GRLIB_perm_inf],
+	["rhsusf_army_ucp_rifleman",1,0,0,GRLIB_perm_inf],
+	["rhsusf_army_ucp_medic",1,0,0,GRLIB_perm_inf],
+	["rhsusf_army_ucp_engineer",1,0,0,GRLIB_perm_inf],
 	["rhsusf_army_ucp_grenadier",1,0,0,GRLIB_perm_inf],
 	["rhsusf_army_ucp_marksman",1,0,0,GRLIB_perm_inf],
-	["rhsusf_army_ucp_maaws",1,0,0,0],
+	["rhsusf_army_ucp_maaws",1,0,0,GRLIB_perm_inf],
 	["rhsusf_army_ucp_machinegunner",1,0,0,GRLIB_perm_inf],
 	["rhsusf_army_ucp_sniper",1,0,0,GRLIB_perm_inf],
 	["rhsusf_army_ucp_sniper_m107",1,0,0,GRLIB_perm_log],
@@ -47,9 +47,9 @@ units_loadout_overide = [
 ];
 
 light_vehicles = [
-	["B_Quadbike_01_F",1,5,1,0],
-	["rhsusf_mrzr4_d",1,25,1,0],
-	["rhsusf_m113_usarmy_medical",0,0,0,0]
+	["B_Quadbike_01_F",1,5,1,GRLIB_perm_inf],
+	["rhsusf_mrzr4_d",1,25,1,GRLIB_perm_inf],
+	["rhsusf_m113_usarmy_medical",0,0,0,GRLIB_perm_inf],
 	["Redd_Tank_LKW_leicht_gl_Wolf_Flecktarn_FueFu",2,25,2,GRLIB_perm_log],
 	["Redd_Tank_LKW_leicht_gl_Wolf_Flecktarn_San",2,25,2,GRLIB_perm_log],
 	["UK3CB_BAF_LandRover_Soft_FFR_Green_A",2,25,2,GRLIB_perm_log],
@@ -286,12 +286,12 @@ support_vehicles_west = [
 	["B_APC_Tracked_01_CRV_F",15,200,50,GRLIB_perm_inf],
 	["Land_RepairDepot_01_civ_F",0,100,0,GRLIB_perm_log],
 	["Box_NATO_Equip_F",0,10,0,GRLIB_perm_log],
-	["kat_miscSupplyCrate",0,0,0,0],
-	["kat_surgerySupplyCrate",0,0,0,0],
-	["kat_basicSupplyCrate",0,0,0,0],
-	["kat_pharmaSupplyCrate",0,0,0,0],
-	["ace_medicalSupplyCrate",0,0,0,0],
-	["ace_medicalSupplyCrate_advanced",0,0,0,0]
+	["kat_miscSupplyCrate",0,0,0,GRLIB_perm_inf],
+	["kat_surgerySupplyCrate",0,0,0,GRLIB_perm_inf],
+	["kat_basicSupplyCrate",0,0,0,GRLIB_perm_inf],
+	["kat_pharmaSupplyCrate",0,0,0,GRLIB_perm_inf],
+	["ace_medicalSupplyCrate",0,0,0,GRLIB_perm_inf],
+	["ace_medicalSupplyCrate_advanced",0,0,0,GRLIB_perm_inf]
 ];
 
 buildings_west_overide = true;
@@ -299,8 +299,8 @@ buildings_west = [
 	["Land_Cargo_Tower_V1_F",0,0,0,GRLIB_perm_log],
 	["Land_Cargo_House_V1_F",0,0,0,GRLIB_perm_log],
 	["Land_Cargo_Patrol_V1_F",0,0,0,GRLIB_perm_log],
-	["Flag_NATO_F",0,0,0,0,GRLIB_perm_log],
-	["Land_RepairDepot_01_green_F",0,0,0,0]
+	["Flag_NATO_F",0,0,0,GRLIB_perm_log],
+	["Land_RepairDepot_01_green_F",0,0,0,0],
 	["US_WarfareBArtilleryRadar_Base_EP1",0,0,0,GRLIB_perm_log],
     ["Land_fort_artillery_nest_EP1",0,0,0,GRLIB_perm_log],
     ["Land_Mil_Barracks_EP1",0,0,0,GRLIB_perm_log],

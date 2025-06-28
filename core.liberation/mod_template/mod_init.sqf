@@ -30,6 +30,6 @@ GRLIB_mod_list_name = [
 	["A3_OPF_PAC", "ArmA3 CSAT Pacific"],
 	["A3_OPF_LT", "ArmA3 CSAT Light"],
 	["A3_OPF_UB", "ArmA3 CSAT Urban"],
-	["RHS_USAF", "RHS US Army"],
-	["RHS_AFRF", "RHS Russians"]
+	["RHS_USAF", "RHS US Armed Force"],
+	["RHS_AFRF", "RHS AF Russian Fed."]
 ];
