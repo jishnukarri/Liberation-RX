@@ -26,7 +26,7 @@ abort_loading_msg = "Unkwon Error";
 GRLIB_ACE_enabled = false;
 //GRLIB_LRX_debug = true;
 
-private _path = "\userconfig\whitelist.sqf";
+private _path = "\UserConfig\whitelist.sqf";
 if (fileExists _path) then {
 	[] call compileFinal preprocessFile _path;
 } else {
