@@ -5,10 +5,14 @@
 // For example: "76561198085724439"
 // To know that information: https://steamid.io/
 GRLIB_whitelisted_steamids = [
+    "76561199554867806",
+    "76561198125826462"
 ];
 
 // Allow player to use the Light Admin Menu (aka Moderators)
 GRLIB_whitelisted_moderators = [
+    "76561199554867806",
+    "76561198125826462"
 ];
 
 // Forbiden player names.
