@@ -6,7 +6,7 @@ class CfgSettings
 		// Hier muss das serverCommandPassword der config.cfg stehen !
         //serverCommandPassword = "";
         // {Hours, Minutes} / Hardcoded minimum is 5 Minutes !
-        restartInterval[] = {4, 10};
+        restartInterval[] = {12, 00};
         // Interval in dem das System die Uptime mit der Restart Zeit vergleicht
         checkInterval = 1;
 

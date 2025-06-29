@@ -30,7 +30,6 @@ saving = 0;
 briefing = 0;
 joinUnassigned = 0;
 LARs_calculateSideGear = 1;
-cba_settings_hasSettingsFile = 1;
 
 class CfgFunctions {
 	#include "addons\SDB_DALE\CfgFunctions.hpp"
