@@ -162,7 +162,7 @@ GRLIB_PARAM_OptionDescriptionKey = "OptionDescriptions";
 
 _Mission_Params = [
     [GRLIB_PARAM_introductionKey, createHashMapFromArray [
-        [GRLIB_PARAM_ValueKey, 1],
+        [GRLIB_PARAM_ValueKey, 0],
         [GRLIB_PARAM_NameKey, localize "STR_PARAMS_INTRO"],
         [GRLIB_PARAM_OptionLabelKey, [localize "STR_PARAMS_DISABLED", localize "STR_PARAMS_ENABLED"]],
         [GRLIB_PARAM_OptionValuesKey, [0, 1]],
@@ -174,7 +174,7 @@ _Mission_Params = [
         ]]
     ]],
     [GRLIB_PARAM_DeploymentCinematic, createHashMapFromArray [
-        [GRLIB_PARAM_ValueKey, 1],
+        [GRLIB_PARAM_ValueKey, 0],
         [GRLIB_PARAM_NameKey, localize "STR_PARAMS_DEPLOYMENTCAMERA"],
         [GRLIB_PARAM_OptionLabelKey, [localize "STR_PARAMS_DISABLED", localize "STR_PARAMS_ENABLED"]],
         [GRLIB_PARAM_OptionValuesKey, [0, 1]],
@@ -186,7 +186,7 @@ _Mission_Params = [
         ]]
     ]],
     [GRLIB_PARAM_Opforcap, createHashMapFromArray [
-        [GRLIB_PARAM_ValueKey, 200],
+        [GRLIB_PARAM_ValueKey, 400],
         [GRLIB_PARAM_NameKey, localize "STR_PARAMS_OPFORCAP"],
         [GRLIB_PARAM_OptionLabelKey, ["100", "200", "300", "400"]],
         [GRLIB_PARAM_OptionValuesKey, [100, 200, 300, 400]],
@@ -200,7 +200,7 @@ _Mission_Params = [
         ]]
     ]],
     [GRLIB_PARAM_Unitcap, createHashMapFromArray [
-        [GRLIB_PARAM_ValueKey, 1],
+        [GRLIB_PARAM_ValueKey, 2],
         [GRLIB_PARAM_NameKey, localize "STR_PARAMS_UNITCAP"],
         [GRLIB_PARAM_OptionLabelKey, [
             localize "STR_PARAMS_UNITCAP1",
@@ -304,7 +304,7 @@ _Mission_Params = [
         ]]
     ]],
     [GRLIB_PARAM_HideOpfor, createHashMapFromArray [
-        [GRLIB_PARAM_ValueKey, 1],
+        [GRLIB_PARAM_ValueKey, 0],
         [GRLIB_PARAM_NameKey, localize "STR_OPFORMARK"],
         [GRLIB_PARAM_OptionLabelKey, [localize "STR_ALL", localize "STR_FOG_OF_WAR"]],
         [GRLIB_PARAM_OptionValuesKey, [0,1]],
@@ -333,7 +333,7 @@ _Mission_Params = [
         ]]
     ]],
     [GRLIB_PARAM_Weather, createHashMapFromArray [
-        [GRLIB_PARAM_ValueKey, 1],
+        [GRLIB_PARAM_ValueKey, 4],
         [GRLIB_PARAM_NameKey, localize "STR_WEATHER_PARAM"],
         [GRLIB_PARAM_OptionLabelKey, [
             localize "STR_PARAMS_DISABLED",
@@ -354,7 +354,7 @@ _Mission_Params = [
         ]]
     ]],
     [GRLIB_PARAM_DayDuration, createHashMapFromArray [
-        [GRLIB_PARAM_ValueKey, 1],
+        [GRLIB_PARAM_ValueKey, , 0.5],
         [GRLIB_PARAM_NameKey, localize "STR_PARAMS_DAYDURATION"],
         [GRLIB_PARAM_OptionLabelKey, ["0.25","0.5","1","1.5","2","2.5","3","5","7","10","20","30","40","50"]],
         [GRLIB_PARAM_OptionValuesKey, [0.25,0.5,1,1.5,2,2.5,3,5,7,10,20,30,40,50]],
@@ -433,7 +433,7 @@ _Mission_Params = [
         ]]
     ]],
     [GRLIB_PARAM_PassiveIncomeAmmount, createHashMapFromArray [
-        [GRLIB_PARAM_ValueKey, 300],
+        [GRLIB_PARAM_ValueKey, 100],
         [GRLIB_PARAM_NameKey, localize "STR_PARAM_PASSIVE_INCOME_AMMOUNT"],
         [GRLIB_PARAM_OptionLabelKey, ["100","200","300","400","500","1000","1500"]],
         [GRLIB_PARAM_OptionValuesKey, [100,200,300,400,500,1000,1500]],
@@ -450,7 +450,7 @@ _Mission_Params = [
         ]]
     ]],
     [GRLIB_PARAM_ResourcesMultiplier, createHashMapFromArray [
-        [GRLIB_PARAM_ValueKey, 1],
+        [GRLIB_PARAM_ValueKey, 1.5],
         [GRLIB_PARAM_NameKey, localize "STR_PARAMS_RESOURCESMULTIPLIER"],
         [GRLIB_PARAM_OptionLabelKey, ["x0.25","x0.5","x0.75","x1","x1.25","x1.5","x2","x3","x5","x10","x20","x50"]],
         [GRLIB_PARAM_OptionValuesKey, [0.25,0.5,0.75,1,1.25,1.5,2,3,5,10,20,50]],
@@ -472,7 +472,7 @@ _Mission_Params = [
         ]]
     ]],
     [GRLIB_PARAM_HaloJump, createHashMapFromArray [
-        [GRLIB_PARAM_ValueKey, 1],
+        [GRLIB_PARAM_ValueKey, 0],
         [GRLIB_PARAM_NameKey, localize "STR_HALO_PARAM"],
         [GRLIB_PARAM_OptionLabelKey, [
             localize "STR_PARAMS_DISABLED",
@@ -516,7 +516,7 @@ _Mission_Params = [
         ]]
     ]],
     [GRLIB_PARAM_Wildlife, createHashMapFromArray [
-        [GRLIB_PARAM_ValueKey, 1],
+        [GRLIB_PARAM_ValueKey, 0],
         [GRLIB_PARAM_NameKey, localize "STR_PARAM_WILDLIFE"],
         [GRLIB_PARAM_OptionLabelKey, [localize "STR_PARAMS_DISABLED", localize "STR_PARAMS_ENABLED"]],
         [GRLIB_PARAM_OptionValuesKey, [0,1]],
@@ -547,7 +547,7 @@ _Mission_Params = [
         ]]
     ]],
     [GRLIB_PARAM_AirSupport, createHashMapFromArray [
-        [GRLIB_PARAM_ValueKey, 1],
+        [GRLIB_PARAM_ValueKey, 0],
         [GRLIB_PARAM_NameKey, localize "STR_ENABLE_AIR_SUPPORT"],
         [GRLIB_PARAM_OptionLabelKey, [localize "STR_PARAMS_DISABLED", localize "STR_PARAMS_ENABLED"]],
         [GRLIB_PARAM_OptionValuesKey, [0,1]],
@@ -581,7 +581,7 @@ _Mission_Params = [
         ]]
     ]],
     [GRLIB_PARAM_Alarms, createHashMapFromArray [
-        [GRLIB_PARAM_ValueKey, 1],
+        [GRLIB_PARAM_ValueKey, 0],
         [GRLIB_PARAM_NameKey, localize "STR_ALARMS"],
         [GRLIB_PARAM_OptionLabelKey, [localize "STR_PARAMS_DISABLED", localize "STR_PARAMS_ENABLED"]],
         [GRLIB_PARAM_OptionValuesKey, [0,1]],
@@ -593,7 +593,7 @@ _Mission_Params = [
         ]]
     ]],
     [GRLIB_PARAM_MineProbability, createHashMapFromArray [
-        [GRLIB_PARAM_ValueKey, 100],
+        [GRLIB_PARAM_ValueKey, 50],
         [GRLIB_PARAM_NameKey, localize "STR_MINE_PROBABILITY"],
         [GRLIB_PARAM_OptionLabelKey, [localize "STR_PARAMS_DISABLED","5%","10%","15%","25%","50%","75%","100%"]],
         [GRLIB_PARAM_OptionValuesKey, [0,5,10,15,25,50,75,100]],
@@ -611,7 +611,7 @@ _Mission_Params = [
         ]]
     ]],
     [GRLIB_PARAM_ModPresetWest, createHashMapFromArray [
-        [GRLIB_PARAM_ValueKey, "A3_BLU"],
+        [GRLIB_PARAM_ValueKey, "RHS_USAF"],
         [GRLIB_PARAM_NameKey, localize "STR_MOD_PRESET_WEST"],
         [GRLIB_PARAM_OptionLabelKey, _list_west select 0],
         [GRLIB_PARAM_OptionValuesKey, _list_west select 1],
@@ -619,7 +619,7 @@ _Mission_Params = [
         [GRLIB_PARAM_DescriptionKey, localize "STR_MOD_PRESET_WEST_DESC"]
     ]],
     [GRLIB_PARAM_ModPresetEast, createHashMapFromArray [
-        [GRLIB_PARAM_ValueKey, "A3_OPF"],
+        [GRLIB_PARAM_ValueKey, "RHS_AFRF"],
         [GRLIB_PARAM_NameKey, localize "STR_MOD_PRESET_EAST"],
         [GRLIB_PARAM_OptionLabelKey, _list_east select 0],
         [GRLIB_PARAM_OptionValuesKey, _list_east select 1],
@@ -666,7 +666,7 @@ _Mission_Params = [
         ]]
     ]],
     [GRLIB_PARAM_PAR_Revive, createHashMapFromArray [
-        [GRLIB_PARAM_ValueKey, 1],
+        [GRLIB_PARAM_ValueKey, 0],
         [GRLIB_PARAM_NameKey, localize "STR_PARAMS_PAR_REVIVE"],
         [GRLIB_PARAM_OptionLabelKey, [
             localize "STR_PARAMS_DISABLED",
@@ -685,7 +685,7 @@ _Mission_Params = [
         ]]
     ]],
     [GRLIB_PARAM_PAR_AI_Revive, createHashMapFromArray [
-        [GRLIB_PARAM_ValueKey, 7],
+        [GRLIB_PARAM_ValueKey, 0],
         [GRLIB_PARAM_NameKey, localize "STR_PARAMS_PAR_AI_REVIVE"],
         [GRLIB_PARAM_OptionLabelKey, ["Unlimited","3","5","7","10","15","20"]],
         [GRLIB_PARAM_OptionValuesKey, [0,3,5,7,10,15,20]],
@@ -702,7 +702,7 @@ _Mission_Params = [
         ]]
     ]],
     [GRLIB_PARAM_PAR_BleedOut, createHashMapFromArray [
-        [GRLIB_PARAM_ValueKey, 300],
+        [GRLIB_PARAM_ValueKey, 600],
         [GRLIB_PARAM_NameKey, localize "STR_PARAMS_PAR_BLEEDOUT"],
         [GRLIB_PARAM_OptionLabelKey, ["100","200","300","400","500","600"]],
         [GRLIB_PARAM_OptionValuesKey, [100,200,300,400,500,600]],
@@ -718,7 +718,7 @@ _Mission_Params = [
         ]]
     ]],
     [GRLIB_PARAM_PAR_Grave, createHashMapFromArray [
-        [GRLIB_PARAM_ValueKey, 1],
+        [GRLIB_PARAM_ValueKey, 0],
         [GRLIB_PARAM_NameKey, localize "STR_PARAMS_PAR_GRAVE"],
         [GRLIB_PARAM_OptionLabelKey, [localize "STR_PARAMS_DISABLED", localize "STR_PARAMS_ENABLED"]],
         [GRLIB_PARAM_OptionValuesKey, [0,1]],
@@ -742,7 +742,7 @@ _Mission_Params = [
         ]]
     ]],
     [GRLIB_PARAM_MaxSpawnPoint, createHashMapFromArray [
-        [GRLIB_PARAM_ValueKey, 3],
+        [GRLIB_PARAM_ValueKey, 1],
         [GRLIB_PARAM_NameKey, localize "STR_PARAM_SPAWN_MAX"],
         [GRLIB_PARAM_OptionLabelKey, ["1","2","3","4","5","6"]],
         [GRLIB_PARAM_OptionValuesKey, [1,2,3,4,5,6]],
@@ -787,7 +787,7 @@ _Mission_Params = [
         ]]
     ]],
     [GRLIB_PARAM_SquadSize, createHashMapFromArray [
-        [GRLIB_PARAM_ValueKey, 2],
+        [GRLIB_PARAM_ValueKey, 6],
         [GRLIB_PARAM_NameKey, localize "STR_PARAM_SQUAD_SIZE_START"],
         [GRLIB_PARAM_OptionLabelKey, ["0","1","2","3","4","5","6"]],
         [GRLIB_PARAM_OptionValuesKey, [0,1,2,3,4,5,6]],
@@ -804,7 +804,7 @@ _Mission_Params = [
         ]]
     ]],
     [GRLIB_PARAM_MaxSquadSize, createHashMapFromArray [
-        [GRLIB_PARAM_ValueKey, 5],
+        [GRLIB_PARAM_ValueKey, 10],
         [GRLIB_PARAM_NameKey, localize "STR_PARAM_SQUAD_SIZE"],
         [GRLIB_PARAM_OptionLabelKey, ["0","1","2","3","4","5","6","7","8","9","10","20"]],
         [GRLIB_PARAM_OptionValuesKey, [0,1,2,3,4,5,6,7,8,9,10,20]],
@@ -878,7 +878,7 @@ _Mission_Params = [
         ]]
     ]],
     [GRLIB_PARAM_FilterArsenal, createHashMapFromArray [
-        [GRLIB_PARAM_ValueKey, 1],
+        [GRLIB_PARAM_ValueKey, 0],
         [GRLIB_PARAM_NameKey, localize "STR_LIMIT_ARSENAL"],
         [GRLIB_PARAM_OptionLabelKey, [
             localize "STR_PARAMS_DISABLED",
@@ -901,7 +901,7 @@ _Mission_Params = [
         ]]
     ]],
     [GRLIB_PARAM_ForcedLoadout, createHashMapFromArray [
-        [GRLIB_PARAM_ValueKey, 1],
+        [GRLIB_PARAM_ValueKey, 0],
         [GRLIB_PARAM_NameKey, localize "STR_FORCE_LOADOUT"],
         [GRLIB_PARAM_OptionLabelKey, [localize "STR_PARAMS_DISABLED", "Preset 1", "Preset 2"]],
         [GRLIB_PARAM_OptionValuesKey, [0,1,2]],
@@ -914,7 +914,7 @@ _Mission_Params = [
         ]]
     ]],
     [GRLIB_PARAM_FreeLoadout, createHashMapFromArray [
-        [GRLIB_PARAM_ValueKey, 0],
+        [GRLIB_PARAM_ValueKey, 1],
         [GRLIB_PARAM_NameKey, localize "STR_FREE_LOADOUT"],
         [GRLIB_PARAM_OptionLabelKey, [localize "STR_PARAMS_DISABLED", localize "STR_PARAMS_ENABLED"]],
         [GRLIB_PARAM_OptionValuesKey, [0,1]],
@@ -926,7 +926,7 @@ _Mission_Params = [
         ]]
     ]],
     [GRLIB_PARAM_Thermic, createHashMapFromArray [
-        [GRLIB_PARAM_ValueKey, 1],
+        [GRLIB_PARAM_ValueKey, 2],
         [GRLIB_PARAM_NameKey, localize "STR_THERMAL"],
         [GRLIB_PARAM_OptionLabelKey, [localize "STR_PARAMS_DISABLED", "Only at night", localize "STR_PARAMS_ENABLED"]],
         [GRLIB_PARAM_OptionValuesKey, [0,1,2]],
@@ -939,7 +939,7 @@ _Mission_Params = [
         ]]
     ]],
     [GRLIB_PARAM_MaxFobs, createHashMapFromArray [
-        [GRLIB_PARAM_ValueKey, 3],
+        [GRLIB_PARAM_ValueKey, 2],
         [GRLIB_PARAM_NameKey, localize "STR_PARAM_FOBS_COUNT"],
         [GRLIB_PARAM_OptionLabelKey, ["0","1","2","3","4","5","6","7","8","9","10"]],
         [GRLIB_PARAM_OptionValuesKey, [0,1,2,3,4,5,6,7,8,9,10]],
@@ -960,7 +960,7 @@ _Mission_Params = [
         ]]
     ]],
     [GRLIB_PARAM_MaxOutpost, createHashMapFromArray [
-        [GRLIB_PARAM_ValueKey, 4],
+        [GRLIB_PARAM_ValueKey, 2],
         [GRLIB_PARAM_NameKey, localize "STR_PARAM_OUTPOST_COUNT"],
         [GRLIB_PARAM_OptionLabelKey, ["0","1","2","3","4","5","6","7","8","9","10"]],
         [GRLIB_PARAM_OptionValuesKey, [0,1,2,3,4,5,6,7,8,9,10]],
@@ -1021,7 +1021,7 @@ _Mission_Params = [
         ]]
     ]],
     [GRLIB_PARAM_FancyInfo, createHashMapFromArray [
-        [GRLIB_PARAM_ValueKey, 2],
+        [GRLIB_PARAM_ValueKey, 0],
         [GRLIB_PARAM_NameKey, localize "STR_FANCY"],
         [GRLIB_PARAM_OptionLabelKey, [localize "STR_PARAMS_DISABLED","Info",localize "STR_PARAMS_ENABLED"]],
         [GRLIB_PARAM_OptionValuesKey, [0,1,2]],
@@ -1034,7 +1034,7 @@ _Mission_Params = [
         ]]
     ]],
     [GRLIB_PARAM_EnableLock, createHashMapFromArray [
-        [GRLIB_PARAM_ValueKey, 1],
+        [GRLIB_PARAM_ValueKey, 0],
         [GRLIB_PARAM_NameKey, localize "STR_VEH_LOCK"],
         [GRLIB_PARAM_OptionLabelKey, [localize "STR_PARAMS_DISABLED", localize "STR_PARAMS_ENABLED"]],
         [GRLIB_PARAM_OptionValuesKey, [0,1]],
@@ -1046,7 +1046,7 @@ _Mission_Params = [
         ]]
     ]],
     [GRLIB_PARAM_EnemyLock, createHashMapFromArray [
-        [GRLIB_PARAM_ValueKey, 1],
+        [GRLIB_PARAM_ValueKey, 0],
         [GRLIB_PARAM_NameKey, localize "STR_OPFOR_VEH_LOCK"],
         [GRLIB_PARAM_OptionLabelKey, [localize "STR_PARAMS_DISABLED", localize "STR_PARAMS_ENABLED"]],
         [GRLIB_PARAM_OptionValuesKey, [0,1]],
@@ -1058,7 +1058,7 @@ _Mission_Params = [
         ]]
     ]],
     [GRLIB_PARAM_FuelConso, createHashMapFromArray [
-        [GRLIB_PARAM_ValueKey, 1],
+        [GRLIB_PARAM_ValueKey, 0],
         [GRLIB_PARAM_NameKey, localize "STR_PARAMS_FUEL_CONSO"],
         [GRLIB_PARAM_OptionLabelKey, [localize "STR_PARAMS_DISABLED","Low","Normal","Medium","High"]],
         [GRLIB_PARAM_OptionValuesKey, [0,0.5,1,1.5,2]],
@@ -1073,7 +1073,7 @@ _Mission_Params = [
         ]]
     ]],
     [GRLIB_PARAM_Drones, createHashMapFromArray [
-        [GRLIB_PARAM_ValueKey, 1],
+        [GRLIB_PARAM_ValueKey, 0],
         [GRLIB_PARAM_NameKey, localize "STR_PARAMS_ENABLE_DRONES"],
         [GRLIB_PARAM_OptionLabelKey, [localize "STR_PARAMS_DISABLED", localize "STR_PARAMS_ENABLED"]],
         [GRLIB_PARAM_OptionValuesKey, [0,1]],
@@ -1085,7 +1085,7 @@ _Mission_Params = [
         ]]
     ]],
     [GRLIB_PARAM_MaxGarageSize, createHashMapFromArray [
-        [GRLIB_PARAM_ValueKey, 6],
+        [GRLIB_PARAM_ValueKey, 3],
         [GRLIB_PARAM_NameKey, localize "STR_PARAM_GARAGE_SIZE"],
         [GRLIB_PARAM_OptionLabelKey, ["0","1","2","3","4","5","6","7","8","9","10"]],
         [GRLIB_PARAM_OptionValuesKey, [0,1,2,3,4,5,6,7,8,9,10]],
@@ -1106,7 +1106,7 @@ _Mission_Params = [
         ]]
     ]],
     [GRLIB_PARAM_SectorRadius, createHashMapFromArray [
-        [GRLIB_PARAM_ValueKey, 0],
+        [GRLIB_PARAM_ValueKey, 600],
         [GRLIB_PARAM_NameKey, localize "STR_PARAM_SECTOR_RADIUS"],
         [GRLIB_PARAM_OptionLabelKey, [format ["AUTO (%1)", GRLIB_sector_size],"300","400","600","800","1000","1200","1500","2000"]],
         [GRLIB_PARAM_OptionValuesKey, [0,300,400,600,800,1000,1200,1500,2000]],
@@ -1125,7 +1125,7 @@ _Mission_Params = [
         ]]
     ]],
     [GRLIB_PARAM_SectorDespawn, createHashMapFromArray [
-        [GRLIB_PARAM_ValueKey, 72],
+        [GRLIB_PARAM_ValueKey, 96],
         [GRLIB_PARAM_NameKey, localize "STR_PARAM_SECTOR_DESPAWN"],
         [GRLIB_PARAM_OptionLabelKey, ["3","6","8","12","16","20"]],
         [GRLIB_PARAM_OptionValuesKey, [(3*12),(6*12),(8*12),(12*12),(16*12),(20*12)]],
@@ -1140,6 +1140,9 @@ _Mission_Params = [
             localize "STR_PARAM_SECTOR_DESPAWN_OPT5"
         ]]
     ]],
+
+// 72
+
     [GRLIB_PARAM_BuildingRatio, createHashMapFromArray [
         [GRLIB_PARAM_ValueKey, 1.5],
         [GRLIB_PARAM_NameKey, localize "STR_PARAMS_BUILDING_RATIO"],
@@ -1158,7 +1161,7 @@ _Mission_Params = [
         ]]
     ]],
     [GRLIB_PARAM_KeepScore, createHashMapFromArray [
-        [GRLIB_PARAM_ValueKey, 0],
+        [GRLIB_PARAM_ValueKey, 1],
         [GRLIB_PARAM_NameKey, localize "STR_KEEP_SCORE"],
         [GRLIB_PARAM_OptionLabelKey, [localize "STR_PARAMS_DISABLED", localize "STR_PARAMS_ENABLED"]],
         [GRLIB_PARAM_OptionValuesKey, [0,1]],
@@ -1194,7 +1197,7 @@ _Mission_Params = [
         ]]
     ]],
     [GRLIB_PARAM_CleanupVehicles, createHashMapFromArray [
-        [GRLIB_PARAM_ValueKey, 1200],
+        [GRLIB_PARAM_ValueKey, 900],
         [GRLIB_PARAM_NameKey, localize "STR_CLEANUP_PARAM"],
         [GRLIB_PARAM_OptionLabelKey, [
             localize "STR_PARAMS_DISABLED",
@@ -1217,7 +1220,7 @@ _Mission_Params = [
         ]]
     ]],
     [GRLIB_PARAM_AutoSave, createHashMapFromArray [
-        [GRLIB_PARAM_ValueKey, 1800],
+        [GRLIB_PARAM_ValueKey, 900],
         [GRLIB_PARAM_NameKey, localize "STR_AUTO_SAVE"],
         [GRLIB_PARAM_OptionLabelKey, [
             localize "STR_PARAMS_DISABLED",
@@ -1240,7 +1243,7 @@ _Mission_Params = [
         ]]
     ]],
     [GRLIB_PARAM_TFRadioRange, createHashMapFromArray [
-        [GRLIB_PARAM_ValueKey, 2000],
+        [GRLIB_PARAM_ValueKey, 1000],
         [GRLIB_PARAM_NameKey, localize "STR_PARAM_TFAR_RADIUS"],
         [GRLIB_PARAM_OptionLabelKey, [localize "STR_PARAMS_DISABLED","1 km","2 km","3 km","4 km","5 km","7.5 km","10 km","15 km"]],
         [GRLIB_PARAM_OptionValuesKey, [0,1000,2000,3000,4000,5000,7500,10000,15000]],
@@ -1325,7 +1328,7 @@ _Mission_Params = [
         ]]
     ]],
     [GRLIB_PARAM_TK_count, createHashMapFromArray [
-        [GRLIB_PARAM_ValueKey, 4],
+        [GRLIB_PARAM_ValueKey, 3],
         [GRLIB_PARAM_NameKey, localize "STR_TK_COUNT"],
         [GRLIB_PARAM_OptionLabelKey, ["3","4","5","6","7","8","9","10"]],
         [GRLIB_PARAM_OptionValuesKey, [3,4,5,6,7,8,9,10]],
@@ -1343,7 +1346,7 @@ _Mission_Params = [
         ]]
     ]],
     [GRLIB_PARAM_Persistent, createHashMapFromArray [
-        [GRLIB_PARAM_ValueKey, 0],
+        [GRLIB_PARAM_ValueKey, 1],
         [GRLIB_PARAM_NameKey, localize "STR_PERSISTENT_MODE"],
         [GRLIB_PARAM_OptionLabelKey, [localize "STR_PARAMS_DISABLED", localize "STR_PARAMS_ENABLED"]],
         [GRLIB_PARAM_OptionValuesKey, [0,1]],
@@ -1367,7 +1370,7 @@ _Mission_Params = [
         ]]
     ]],
     [GRLIB_PARAM_CommanderModeRadius, createHashMapFromArray [
-        [GRLIB_PARAM_ValueKey, 100],
+        [GRLIB_PARAM_ValueKey, 500],
         [GRLIB_PARAM_NameKey, localize "STR_COMMANDER_MODE_RADIUS"],
         [GRLIB_PARAM_OptionLabelKey, ["100m","150m","200m","300m","400m","500m","600m","700m","800m","900m","1000m"]],
         [GRLIB_PARAM_OptionValuesKey, [100,150,200,300,400,500,600,700,800,900,1000]],
@@ -1388,7 +1391,7 @@ _Mission_Params = [
         ]]
     ]],
     [GRLIB_PARAM_CommanderVoteTimeout, createHashMapFromArray [
-        [GRLIB_PARAM_ValueKey, 60],
+        [GRLIB_PARAM_ValueKey, 120],
         [GRLIB_PARAM_NameKey, "Vote timer duration"],
         [GRLIB_PARAM_OptionLabelKey, ["20s","30s","60s","120s","180s","240s","300s"]],
         [GRLIB_PARAM_OptionValuesKey, [20,30,60,120,180,240,300]],
@@ -1405,7 +1408,7 @@ _Mission_Params = [
         ]]
     ]],
     [GRLIB_PARAM_CommanderAutoStart, createHashMapFromArray [
-        [GRLIB_PARAM_ValueKey, 0],
+        [GRLIB_PARAM_ValueKey, 1],
         [GRLIB_PARAM_NameKey, "Auto-start vote timer"],
         [GRLIB_PARAM_OptionLabelKey, [localize "STR_PARAMS_DISABLED", localize "STR_PARAMS_ENABLED"]],
         [GRLIB_PARAM_OptionValuesKey, [0,1]],
