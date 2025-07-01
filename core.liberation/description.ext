@@ -34,6 +34,7 @@ LARs_calculateSideGear = 1;
 class CfgFunctions {
 	#include "addons\SDB_DALE\CfgFunctions.hpp"
 	#include "addons\MILSIM\VCOM\cfgFunctions.hpp"
+	#include "KP\KPCF\functions.hpp"
 };
 class CfgRemoteExec
 {
@@ -123,3 +124,10 @@ class CfgDebriefing {
 #include "addons\JKB\JKB_dialog.hpp"
 #include "addons\VAM\VAM_GUI_controls.hpp"
 #include "addons\VAM\VAM_GUI_classes.hpp"
+
+
+// KP Crate-Filler
+
+#include "KP\KPGUI\KPGUI_defines.hpp"
+#include "KP\KPCF\ui\defines.hpp"
+#include "KP\KPCF\ui\KP_cratefiller_dialog.hpp"
