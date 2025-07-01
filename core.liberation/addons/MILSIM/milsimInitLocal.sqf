@@ -106,8 +106,10 @@ player createDiarySubject ["Regeln / Rules","Regeln / Rules"];
 player createDiaryRecord ["Regeln / Rules", ["Regeln / Rules", _rules]];
 sleep 10;
 
+//FOB Shoot
+
 player addEventHandler ["Fired", {
-	if (MSU_DisableFobFiring) then {
+	if (true) then {
 		private _shooter = (_this select 0);
 		private _projectile = (_this select 6);
 		// Get Unit count of enemy forces in a radius of 1000 meter
