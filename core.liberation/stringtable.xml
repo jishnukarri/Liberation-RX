@@ -16828,3 +16828,146 @@
 	</Package>
 
 </Project>
+
+<Project name="MSU">
+        <Package name="MSU">
+        <Container name="Role">
+            <Key ID="STR_MSU_ROLLMED">
+                <English>There is already %1 medic in the group %2</English>
+                <German>Es gibt bereits %1 Sanitäter in der Gruppe %2</German>
+            </Key>            
+            <Key ID="STR_MSU_ROLLENG">
+                <English>There is already %1 EOD in the group %2</English>
+                <German>Es gibt bereits %1 EOD in der Gruppe %2</German>
+            </Key>          
+            <Key ID="STR_MSU_MED">
+                <English>You are now a Medic</English>
+                <German>Du bist jetzt ein Sanitäter! </German>
+            </Key>          
+            <Key ID="STR_MSU_ENG">
+                <English>You are now an EOD, and able to defuse mines!</English>
+                <German>Du bist jetzt ein EOD und kannst Minen entschärfen!</German>
+            </Key>
+            <Key ID="STR_MSU_NMED">
+                <English>You are no longer a medic</English>
+                <German>Du bist kein Sanitäter mehr</German>
+            </Key>          
+            <Key ID="STR_MSU_NENG">
+                <English>You are no longer an EOD.</English>
+                <German>Du bist kein EOD mehr.</German>
+            </Key>
+            <Key ID="STR_MSU_FORCENMED">
+                <English>You switched your group and lost your medic role!</English>
+                <German>Du hast deine Gruppe gewechselt und so deine Rolle als Sanitäter verloren!</German>
+            </Key>          
+            <Key ID="STR_MSU_FORCENENG">
+                <English>You switched your group and lost your EOD role!</English>
+                <German>Du hast deine Gruppe gewechselt und so deine Rolle als EOD verloren!</German>
+            </Key>
+                <Key ID="STR_MSU_PLMED">
+                <English>You can only become a medic with 2 or more players!</English>
+                <German>Du kannst erst ab 2 Spielern ein Sanitäter werden!</German>
+            </Key>          
+            <Key ID="STR_MSU_PLENG">
+                <English>You can only become an EOD with 2 or more players!</English>
+                <German>Du kannst erst ab 2 Spielern ein EOD werden!</German>
+            </Key>
+            <Key ID="STR_MSU_Placeholder_Mod_Other">
+                <English>--- Other ---</English>
+                <German>--- Andere ---</German>
+            </Key>
+            <Key ID="STR_MSU_Placeholder_Category_ReplacementParts">
+                <English>--- Spare Parts ---</English>
+                <German>--- Ersatzteile ---</German>
+            </Key>
+            <Key ID="STR_MSU_Placeholder_Category_Logistics">
+                <English>--- Logistics ---</English>
+                <German>--- Logistik ---</German>
+            </Key>
+            <Key ID="STR_MSU_Placeholder_Category_MaintenanceSmall">
+                <English>--- Maintenance (Small) ---</English>
+                <German>--- Wartung (Klein) ---</German>
+            </Key>
+            <Key ID="STR_MSU_Placeholder_Category_MaintenanceBig">
+                <English>--- Maintenance (Big) ---</English>
+                <German>--- Wartung (Groß) ---</German>
+            </Key>
+            <Key ID="MSU_Placeholder_Category_Barricade">
+                <English>--- Barriers and barricades ---</English>
+                <German>--- Barrieren und Absperrungen ---</German>
+            </Key>
+            <Key ID="MSU_Placeholder_Category_Walls">
+                <English>--- Walls ---</English>
+                <German>--- Mauern ---</German>
+            </Key>
+            <Key ID="MSU_Placeholder_Category_Sandbags">
+                <English>--- Trenches and sandbags ---</English>
+                <German>--- Stellungen und Sandsäcke ---</German>
+            </Key>
+            <Key ID="MSU_Placeholder_Category_Camonet">
+                <English>--- Camonets ---</English>
+                <German>--- Tarnnetze ---</German>
+            </Key>
+            <Key ID="MSU_Placeholder_Category_Hospital">
+                <English>--- Field hospital ---</English>
+                <German>--- Feldlazarett ---</German>
+            </Key>
+            <Key ID="MSU_Placeholder_Category_Ladder">
+                <English>--- Ladders and stairs ---</English>
+                <German>--- Leitern und Treppen ---</German>
+            </Key>
+            <Key ID="MSU_Placeholder_Category_Lamps">
+                <English>--- Lamps ---</English>
+                <German>--- Lampen ---</German>
+            </Key>
+            <Key ID="MSU_Placeholder_Category_Flag">
+                <English>--- Flags ---</English>
+                <German>--- Flaggen ---</German>
+            </Key>
+            <Key ID="MSU_Placeholder_Category_Camp">
+                <English>--- Tents and camping ---</English>
+                <German>--- Zelte ---</German>
+            </Key>
+            <Key ID="MSU_Placeholder_Category_Pad">
+                <English>--- Helipads ---</English>
+                <German>--- Helikopter Landeplätze ---</German>
+            </Key>
+            <Key ID="MSU_Placeholder_Category_Cutter">
+                <English>--- Lawn Mower ---</English>
+                <German>--- Rasenmäher ---</German>
+            </Key>
+            <Key ID="MSU_Placeholder_Category_ShootingRange">
+                <English>--- Shooting Range ---</English>
+                <German>--- Schießplatz ---</German>
+            </Key>
+            <Key ID="STR_MSU_No_Shooting_Fob">
+                <English>Shooting in the FOB is prohibited!\nYour projectile has been deleted because there are no enemy forces nearby.</English>
+                <German>Das schießen in der FOB ist verboten!\nDein Projektil wurde gelöscht, da sich keine feindlichen Kräfte in der Nähe befinden.</German>
+            </Key>
+            <Key ID="STR_MSU_Medic_Container_Fullheal">
+                <English>Full Heal (Self)</English>
+                <German>Endheilung (Selbst)</German>
+            </Key>
+            <Key ID="STR_MSU_Medic_Container_FullhealArea">
+                <English>Full Heal (Area)</English>
+                <German>Endheilung (Bereich)</German>
+            </Key>
+            <Key ID="STR_MSU_Mapinfo_Triggerrange">
+                <English>Zone Trigger Range</English>
+                <German>Zonen Aktivierungsradius</German>
+            </Key>
+            <Key ID="STR_MSU_Mapinfo_ZoneCount">
+                <English>Zone Count</English>
+                <German>Anzahl Zonen</German>
+            </Key>
+            <Key ID="STR_MSU_Mapinfo_CapturedCount">
+                <English>Captured Zones</English>
+                <German>Eingenommene Zonen</German>
+            </Key>
+            <Key ID="STR_MSU_Mapinfo_ToCaptureCount">
+                <English>Zones to capture</English>
+                <German>Einzunehmende Zonen</German>
+            </Key>
+        </Container>
+    </Package>
+</Project> 
