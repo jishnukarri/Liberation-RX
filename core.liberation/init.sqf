@@ -42,7 +42,6 @@ sleep 2;
 
 if (!isDedicated && hasInterface) then {
 	[] spawn compileFinal preprocessFileLineNumbers "scripts\client\init_client.sqf";
-	["InitializePlayer", [player, true]] call BIS_fnc_dynamicGroups;
 };
 
 if (!abort_loading) then {
@@ -57,8 +56,6 @@ if (!abort_loading) then {
 
 	if (isServer) then {
 		[] spawn compileFinal preprocessFileLineNumbers "scripts\server\init_server.sqf";
-		[] spawn compileFinal preprocessFileLineNumbers "SA_AdvancedTowing\functions\fn_advancedTowingInit.sqf";
-		["Initialize", [true]] call BIS_fnc_dynamicGroups
 	};
 
 	if (!isDedicated && !hasInterface && isMultiplayer) then {
@@ -74,51 +71,6 @@ if (!abort_loading) then {
 		diag_log abort_loading_msg;
 	};
 };
-
+//MILSIM-SERVERSTART
+[] call compileFinal preprocessFileLineNumbers "addons\MILSIM\milsimInit.sqf";
 diag_log "--- Init stop ---";
-
-diag_log "--- MILSIM UNITED CUSTOM start---";
-
-//Full Heal
-["B_Slingload_01_Medevac_F", "InitPost", {
-	params ["_vehicle"];
-	clearItemCargoGlobal _vehicle;
-	_vehicle addAction	[localize "STR_MSU_Medic_Container_Fullheal",{ params ["_target", "_caller", "_actionId", "_arguments"]; [_caller,true] execVM "MilSimUnited\heal.sqf";},nil,1.5,false,true,"","true",5,false,"",""];
-	_vehicle addAction	[localize "STR_MSU_Medic_Container_FullhealArea",{ params ["_target", "_caller", "_actionId", "_arguments"]; [_caller] execVM "MilSimUnited\heal_aoe.sqf";},nil,1.5,false,true,"","true",5,false,"",""];
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-//Ace & KAT Crates
-["kat_miscSupplyCrate", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle,1] call ace_cargo_fnc_setSize;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-["kat_surgerySupplyCrate", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle,2] call ace_cargo_fnc_setSize;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-["kat_basicSupplyCrate", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle,2] call ace_cargo_fnc_setSize;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-["kat_pharmaSupplyCrate", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle,2] call ace_cargo_fnc_setSize;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-["ace_medicalSupplyCrate", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle,1] call ace_cargo_fnc_setSize;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-["ace_medicalSupplyCrate_advanced", "InitPost", {
-    params ["_vehicle"];
-	[_vehicle,2] call ace_cargo_fnc_setSize;
-}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-//Medic Vech
-["rhsusf_M1078A1P2_WD_fmtv_usarmy", "InitPost", {
-    params ["_vehicle"];
-    if (!local _vehicle) exitWith {};
-    _vehicle setVariable ["ace_medical_isMedicalVehicle", true, true];
-}, true, [], true] call CBA_fnc_addClassEventHandler;
-
-
-
-//Rules
-diag_log "--- MILSIM UNITED CUSTOM stop---";
